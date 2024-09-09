@@ -1,7 +1,7 @@
-### 项目名称：Nukibook 爬虫脚本
+### 项目名称：Nukibooks.com 爬虫脚本
 
 #### 项目概述：
-本项目是一个基于 Selenium 的爬虫脚本，用于从 Nukibook 网站上爬取指定作者的所有文章及所有图片或指定文章下的所有图片，并将其保存到本地。用户可以选择按作者 ID 爬取该作者的所有文章及所有图片，或通过文章 ID 爬取单篇文章内容。
+本项目是一个基于 Selenium 的爬虫脚本，用于从 Nukibooks.com 网站上爬取指定作者的所有文章及所有图片或指定文章下的所有图片，并将其保存到本地。用户可以选择按作者 ID 爬取该作者的所有文章及所有图片，或通过文章 ID 爬取单篇文章内容。
 
 ---
 
@@ -9,7 +9,7 @@
 ```bash
 .
 ├── README.md                # 项目说明文件
-├── nukibook.py                  # 核心爬虫脚本
+├── nukibooks.py                  # 核心爬虫脚本
 └── E:/tools/  # (示例) 爬取数据的默认保存目录
     └── nukibook/
         ├── {author_name}_{author_id}/    # 每个作者的文件夹
@@ -55,7 +55,7 @@
 
 2. 运行以下命令启动脚本：
    ```bash
-   python nukibook.py
+   python nukibooks.py
    ```
 
 3. 根据提示选择操作：
@@ -123,7 +123,7 @@
 ### 常见问题：
 
 1. **如何获取作者 ID 或文章 ID？**
-   - 你可以在 Nukibook 网站的作者页面或文章 URL 中找到 `author_id` 或 `article_id`，例如：
+   - 你可以在 Nukibooks.com 网站的作者页面或文章 URL 中找到 `author_id` 或 `article_id`，例如：
      ```
      https://nukibooks.com/artists/{author_id}
      https://nukibooks.com/articles/{article_id}
